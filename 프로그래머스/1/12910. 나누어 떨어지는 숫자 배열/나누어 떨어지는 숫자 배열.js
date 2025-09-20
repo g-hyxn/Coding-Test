@@ -1,0 +1,10 @@
+function solution(arr, divisor) {
+    const answer = arr.filter(num=>num % divisor === 0);
+    if(answer.length>0){
+        return answer.sort((a,b)=> a-b);
+    }
+    else{
+        return [-1];
+    }
+    return answer;
+}
